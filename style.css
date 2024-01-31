@@ -59,13 +59,13 @@ form {
   padding: 1.5rem;
   border-radius: 10px;
 }
-header > img {
+.header > img {
   margin-bottom: 1.5rem;
   background-color: var(--Dark-Blue);
   padding: 0.7rem;
   border-radius: 50%;
 }
-header h1 {
+.header h1 {
   margin-bottom: 0.5rem;
   color: var(--White);
 }
