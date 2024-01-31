@@ -1,0 +1,178 @@
+@layer reset {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: unset;
+  }
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+  img,
+  picture,
+  svg,
+  canvas {
+    /* display: block; */
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-size: 15px;
+  background-color: #000;
+  font-family: 'Overpass', sans-serif;
+}
+/* styling rating state */
+form {
+  max-width: 21rem;
+  background-color: var(--Very-Dark-Blue);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+header > img {
+  margin-bottom: 1.5rem;
+  background-color: var(--Dark-Blue);
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+header h1 {
+  margin-bottom: 0.5rem;
+  color: var(--White);
+}
+p {
+  margin-bottom: 1rem;
+  color: var(--Light-Grey);
+}
+.rating-component {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  margin-bottom: 1rem;
+}
+fieldset input {
+  display: none;
+  /* height: 0; */
+  /* width: 0; */
+}
+input + label {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Dark-Blue);
+  border-radius: 50%;
+}
+input + label:hover,
+input:active + label,
+input:focus-visible + label {
+  cursor: pointer;
+  background-color: var(--Orange);
+  color: var(--White);
+}
+.btn {
+  border-radius: 20px;
+  border: none;
+  height: 2rem;
+  background-color: var(--Orange);
+  color-interpolation-filters: var(--White);
+  letter-spacing: 0.1rem;
+}
+.btn:hover,
+.btn:focus-visible,
+.btn:active {
+  color: var(--Orange);
+  background-color: #fff;
+  cursor: pointer;
+}
+.btn:focus-visible {
+  transform: scale(1.1);
+}
+.rating-component input[type="radio"]:checked + label {
+  background-color: var(--Medium-Grey);
+  color: var(--White);
+}
+small{
+  color: red;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/* styling rating state end */
+
+/* styling for the Thankyou state */
+.thankyou-state-container{
+    max-width: 21rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 10px;
+    display: none;
+}
+.img-container{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .rating p{
+    background-color: var(--Dark-Blue);
+    margin-bottom: 0;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    color: var(--Orange);
+  }
+  .thankyou-container{
+    color: var(--White);
+    margin: 1.3rem 0 0.5rem 0;
+    font-size: 1.5rem;
+  }
+  /* styling thany you state end */
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #000;
+    margin-top: 3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
