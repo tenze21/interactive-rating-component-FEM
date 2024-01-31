@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: Checkout my solution on *frontend mentor* [here]()
+- Solution URL: Checkout my solution on *frontend mentor* [here](https://www.frontendmentor.io/solutions/interactive-rating-component-using-css-flexbox-with-error-message-BPduPfYJcT)
 - Live Site URL: View the live site [here](https://interactive-rating-component-fem-kappa.vercel.app/)
 
 ## My process
