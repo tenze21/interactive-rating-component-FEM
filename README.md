@@ -40,7 +40,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: Checkout my solution on *frontend mentor* [here]()
-- Live Site URL: View the live site [here]()
+- Live Site URL: View the live site [here](https://interactive-rating-component-fem-kappa.vercel.app/)
 
 ## My process
 I thoroughly went through the design and requirements for this challenge and planned out my steps. setting up the design with HTML and CSS was simple but I had a tough time setting up the functionality with` Javascript` guess I am losing touch with `Javascript`.
